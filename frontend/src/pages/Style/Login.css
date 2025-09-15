@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 380px;
+  margin: 50px auto;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding-top: 5rem;
+}
+
+.login-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Prata', serif;
+}
+
+.login-line {
+  border: none;
+  height: 2px;
+  width: 30px;
+  background: #333;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  margin-top: -8px;
+}
+
+.link {
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #555;
+}
+
+.login-btn {
+  background: #000;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #444;
+}

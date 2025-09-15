@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+
+.contact-page {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h2 {
+  font-family: 'Prata', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 3px solid #f7c948;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-img {
+  max-width: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contact-info {
+  text-align: left;
+  max-width: 500px;
+}
+
+.contact-info p {
+  margin: 30px 0;
+  font-size: 20px;
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-title {
+  font-family: 'Prata', serif important;
+  font-size: 50px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-img {
+    flex: 1;
+    margin-right: 40px;
+  }
+
+  .contact-info {
+    flex: 1;
+  }
+}

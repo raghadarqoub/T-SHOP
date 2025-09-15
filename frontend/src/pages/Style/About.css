@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+.about-page {
+  padding: 2rem;
+}
+
+.about-header {
+  font-size: 1.5rem; 
+  text-align: center; 
+  padding-top: 5rem; 
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 2.5rem; 
+}
+
+.about-content {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column; 
+  gap: 4rem; 
+  margin: 2.5rem 0;
+}
+
+.about-img {
+  width: 100%; 
+  height: auto; 
+  max-width: 550px; 
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-text b {
+  color: #333;
+  font-weight: 600;
+  font-family: 'Prata', serif;
+}
+
+.about-why {
+  font-size: 1.25rem; 
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.about-features {
+  
+  display: flex;
+  flex-direction: column; 
+  font-size: 0.875rem;
+  margin-bottom: 5rem; 
+  gap: 1rem;
+}
+
+.feature-box {
+  border: 1px solid #e5e7eb; 
+  padding: 2rem 2.5rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; 
+  background: #fff;
+}
+
+.feature-box b {
+  font-family: 'Prata', serif;
+  font-weight: 600;
+  color: #111;
+}
+
+.feature-box p {
+  color: #4b5563; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; 
+  }
+
+  .about-text {
+    width: 50%;
+  }
+  .feature-box {
+    padding: 5rem 4rem;
+  }
+
+  .about-features {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,97 @@
+.orders-container {
+  border-top: 1px solid #ddd;
+  padding-top: 8rem;
+}
+
+.orders-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-card {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr auto auto; 
+  align-items: center; 
+  gap: 1rem;
+}
+
+.order-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.order-image {
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.order-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.order-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.order-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.order-date {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.date-value {
+  color: #777;
+}
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center; 
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: green;
+}
+
+.status-text {
+  font-size: 0.9rem;
+  color: #333;
+
+}
+
+.order-action {
+  text-align: right;
+}
+
+.track-btn {
+  border: 1px solid #333;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.track-btn:hover {
+  background: #333;
+  color: white;
+}

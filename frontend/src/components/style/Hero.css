@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+.hero {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  border: 1px solid #d1d5db;
+  overflow: hidden;
+  margin-top:111px;
+}
+.hero-text {
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  color: #414141;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  text-align: center;
+}
+.hero-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.line {
+  width: 32px;
+  height: 2px;
+  background: #414141;
+}
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+  /* height: 100%; */
+}
+.shop-now {
+    font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.title {
+  font-family: 'Prata', serif;
+  font-size: 22px;
+  line-height: 1.4;
+  padding: 8px 0;
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+@media (min-width: 480px) {
+  .subtitle {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 16px;
+  }
+}
+@media (min-width: 480px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 42px;
+  }
+}
+@media (min-width: 768px) {
+  .shop-now {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .line {
+    width: 44px;
+  }
+}
+@media (min-width: 640px) {
+  .hero-img {
+    width: 50%;
+  }
+}
+@media (min-width: 640px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-text {
+    width: 50%;
+    padding: 40px;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 640px) {
+  .hero-line {
+    justify-content: flex-start;
+  }
+}

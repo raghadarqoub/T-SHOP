@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+.our-policy-container {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3rem;
+  text-align: center;
+  padding: 5rem 0;
+  color: #374151; 
+}
+
+@media (min-width: 640px) {
+  .our-policy-container {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.policy-item {
+  flex: 1;
+}
+
+.policy-icon {
+  width: 3rem;
+  margin: 0 auto 1.25rem auto;
+}
+
+.policy-title {
+  font-weight: 600;
+}
+
+.policy-desc {
+  color: #9ca3af; 
+}
