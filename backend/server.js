@@ -4,6 +4,7 @@ import 'dotenv/config';
 import connectDB from "./config/mongodb.js";
 import connectCloudinary from "./config/cloudinary.js";
 import userRoute from "./routes/userRoute.js";
+import productRoute from "./routes/productRoute.js";
 
 
 //app config
@@ -18,6 +19,7 @@ app.use(cors());
 
 // API endpoints
 app.use('/api/user', userRoute);
+app.use('/api/product', productRoute);
 
 app.get('/', (req, res) => {
     res.send("Hello from the backend");

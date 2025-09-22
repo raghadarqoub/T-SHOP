@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const productSchema =new mongoose.Schema(
     {
         name: { 
-            type: Array,
+            type: String,
             required: true, 
         },
         description: { 
@@ -26,8 +26,8 @@ const productSchema =new mongoose.Schema(
             type: String, 
             required: true 
         },
-        size: { 
-            type: String, 
+        sizes: { 
+            type: Array, 
             required: true 
         },
         
@@ -44,5 +44,5 @@ const productSchema =new mongoose.Schema(
         timestamps: true,
     }
 );
-const Product = mongoose.models.product || mongoose.model("Product", productSchema);
+const Product = mongoose.models.Product || mongoose.model("Product", productSchema);
 export default Product;
