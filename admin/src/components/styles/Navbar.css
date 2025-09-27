@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 2%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; 
+  margin-top: 8px;
+}
+
+.logout-btn,
+.lang-btn {
+  background-color: #4b5563; 
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap; /* يمنع تقطيع النص */
+}
+
+.logout-btn:hover,
+.lang-btn:hover {
+  background-color: #fdc648;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 8px;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .logout-btn,
+  .lang-btn {
+    flex: 1; 
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .logo {
+    height: 65px;
+    width: 65px;
+  }
+
+  .logout-btn,
+  .lang-btn {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+}
+
+@media (min-width: 901px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .logout-btn,
+  .lang-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
