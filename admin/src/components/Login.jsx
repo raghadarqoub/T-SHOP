@@ -1,22 +1,31 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './styles/Login.css';
-
-const Login = () => {
-  const { t, i18n } = useTranslation(); // استخدمنا i18n
+import axios from 'axios';
+import { backendUrl } from '../App';
+import { toast } from 'react-toastify';
+const Login = ( {setToken}) => {
+  const { t, i18n } = useTranslation(); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const onSubmitHandler = async (e) => {
-    e.preventDefault();
     try {
-      console.log(email, password);
+        e.preventDefault();
+        const response = await axios.post(backendUrl+ '/api/user/admin',{email,password});
+        console.log(response); 
+        if(response.data.success){
+            // localStorage.setItem("token", response.data.token);
+          setToken(response.data.token)
+        }else{
+          toast.error(response.data.message)
+        }
+        
     } catch (err) {
       console.log(err);
+      toast.error(err.message);
     }
   };
-
-  // دالة لتبديل اللغة
   const toggleLanguage = () => {
     const newLang = i18n.language === 'en' ? 'ar' : 'en';
     i18n.changeLanguage(newLang);
@@ -25,7 +34,6 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-box">
-        {/* زر تبديل اللغة */}
         <button className="lang-btn" onClick={toggleLanguage}>
           {i18n.language === 'en' ? 'عربي' : 'English'}
         </button>

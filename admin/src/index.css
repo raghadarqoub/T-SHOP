@@ -4,6 +4,11 @@
     
     font-family: 'Outfit', sans-serif;
 }
+select,input,textarea{
+    border: 1px solid #c2c2c2;
+    outline:#f8f8f8;
+    border-radius: 5px;
+}
 
 .active{
     background-color : #f8f8f8;

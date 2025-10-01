@@ -1,0 +1,82 @@
+.list-container {
+  width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.list-container.rtl {
+  direction: rtl;
+  text-align: right;
+}
+.list-container.ltr {
+  direction: ltr;
+  text-align: left;
+}
+.list-title {
+  margin-bottom: 15px;
+  font-size: 1.5rem; 
+  font-weight: 700;
+}
+.list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+.list-header {
+  display: none;
+  grid-template-columns: 120px 2fr 1fr 1fr 100px; 
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+  font-weight: bold;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .list-header {
+    display: grid;
+  }
+}
+.list-item {
+  display: grid;
+  grid-template-columns: 120px 2fr 1fr 1fr 100px; 
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.list-item:hover {
+  background-color: #f9f9f9;
+}
+.product-image {
+  width: 80px;  
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+.delete-btn {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  text-align: right;
+  transition: color 0.2s ease;
+  font-size: 1.2rem;
+}
+.delete-btn:hover {
+  color: darkred;
+}
+@media (min-width: 768px) {
+  .delete-btn {
+    text-align: center;
+  }
+}
+.no-products {
+  text-align: center;
+  color: #666;
+  padding: 25px 0;
+  font-size: 1.1rem;
+}

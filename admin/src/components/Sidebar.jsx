@@ -6,7 +6,7 @@ import "./styles/Sidebar.css";
 
 const Sidebar = () => {
   const { t } = useTranslation();
-  const [open, setOpen] = useState(true); // open افتراضي true للشاشات الكبيرة
+  const [open, setOpen] = useState(true); 
 
   return (
     <div className={`sidebar ${open ? "open" : ""}`}>

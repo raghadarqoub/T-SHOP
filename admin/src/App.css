@@ -8,6 +8,7 @@
 }
 
 .app-container > .sidebar {
+  margin-top : 50px;
   width: 18%; 
   min-height: 100vh;
   border-right: 2px solid #e5e7eb;
@@ -15,7 +16,6 @@
   transition: all 0.3s ease;
 }
 .main-content {
-  width: 70%;
   margin-left: max(5vw, 25px);
   margin-top: 2rem;
   color: #4b5563; 
